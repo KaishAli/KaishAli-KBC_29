@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets play KBC</title>
+</head>
+
+<body>
+    <script>
+        var prizeMoney = 0, score = 0;
+
+        var kbc = [
+            {
+
+                question: "Who is the father of C? \n (a).Dennis Ritchie \n (b).James Goslin \n(c).michael jackson \n (d).james bond",
+                answer: "a",
+
+            },
+            {
+                question: "Who invented electric bulb ? \n(a).Newton\n(b).Thomas Alva Adision \n (c) Einstien",
+                answer: "b",
+            },
+            {
+                question: " who is the prime minister of india ?\n(a)Mr RajNath Singh   \n (b).Mr Yogi \n (c)Mr Narendra Modi ",
+                answer: "c",
+            },
+        ];
+        for (var i = 0; i < kbc.length; i++) {
+
+            var output = prompt(kbc[i].question);
+
+            if (output == kbc[i].answer) {
+
+                alert("Correct answer!");
+
+                prizeMoney += 2000;
+                score++;
+            }
+            else {
+                alert("OPPS WRONG ANSWER ");
+                break;
+            }
+        }
+        alert("Out of " + kbc.length + " questions " + score + " were correct and you've won Rs." + prizeMoney);
+   
+   </script>
+
+</body>
+
+</html>
